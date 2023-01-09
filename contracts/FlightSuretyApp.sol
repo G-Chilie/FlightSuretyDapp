@@ -467,4 +467,7 @@ contract _FlightSuretyData {
     function getInsuranceClaim(address passenger) public view returns (uint256);
 
     function isOperational() public view returns (bool);
+    
+    function isOperational() public view returns (bool);
+
 }
