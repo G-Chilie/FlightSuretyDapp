@@ -188,8 +188,8 @@ contract FlightSuretyApp {
         uint8 index,
         address airline,
         string flight,
-        uint256 timestamp,
-        uint8 statusCode
+        uint256 timestamp
+        //uint8 statusCode
     ) internal requireIsOperational {
         bytes32 key = keccak256(
             abi.encodePacked(index, airline, flight, timestamp)
@@ -269,7 +269,7 @@ contract FlightSuretyApp {
     function pay() public requireIsOperational {
         uint256 claim = flightSuretyData.getInsuranceClaim(msg.sender);
         require(claim > 0, "No insurance amount accrued");
-        require(msg.value <= claim, "Invalid claim amount");
+        //require(msg.value <= claim, "Invalid claim amount");
         flightSuretyData.pay(msg.sender, claim);
     }
 
@@ -390,7 +390,7 @@ contract FlightSuretyApp {
 
             // Handle flight status as appropriate
             if (statusCode == 20 ) {
-                processFlightStatus(index, airline, flight, timestamp, statusCode);
+                //processFlightStatus(index, airline, flight, timestamp, statusCode);
             }
         }
     }

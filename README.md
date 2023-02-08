@@ -34,8 +34,6 @@ To view dapp:
 
 ## DAPP FLOW
 
-Click this link to watch a short demo video of the DAPP
-https://www.loom.com/share/7609ca6c2d6443b8a93b82b9f9de8155
 1. This section allows a user to register an airline. An Airline can be registered in two ways, 
 (i) by selecting a metamask account and clicking the first button, or (ii) by providing an ethereum address directly in the inputbox and clicking the second button.
 
